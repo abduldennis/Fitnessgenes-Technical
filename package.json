@@ -1,0 +1,16 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path sass sass/main.scss   public/css/main.css",
+    "watch-css": "node-sass -w sass/main.scss -o public/css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "node-sass": "^4.7.2"
+  }
+}

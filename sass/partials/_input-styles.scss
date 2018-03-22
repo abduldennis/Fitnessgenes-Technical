@@ -1,0 +1,86 @@
+$small: 40em;
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100px;
+  height: calc(3em + 1px);
+  margin: 0 0 0.3em;
+  padding: 1em;
+  border: 1px solid $color-grey-verylightgrey;
+  background: $color-white;
+  resize: none;
+  outline: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  border-radius: 6px;
+  text-align: center;
+  &:focus {
+    border-color: $input-border;
+    border-bottom: 6px solid $input-border;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4em;
+}
+
+#validationerror {
+  color: red;
+  font-size: 0.7em;
+  margin-top: 0;
+}
+
+.container {
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.button-wrap {
+  position: relative;
+  text-align: center;
+}
+
+.button-label {
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 0.5em;
+  cursor: pointer;
+  color: $color-grey-nero;
+  border-radius: 0.25em;
+  background: $color-white-whitesmoke;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2), inset 0 -3px 0 rgba(0,0,0,0.22);
+  transition: 0.3s;
+  user-select: none;
+  h1 {
+    font-size: 1em;
+  }
+  &:hover {
+    background: darken($color-green-shamrock, 10%);
+    color: $color-white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2), inset 0 -3px 0 rgba(0,0,0,0.32);
+  }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2), inset 0px -1px 0 rgba(0,0,0,0.22); 
+  }
+  @media (max-width: $small) {
+    padding: 0em 1em 3px;
+    margin: 0.25em;
+  }
+}
+
+input[type="radio"]:checked + .button-label {
+  background: $color-green-shamrock;
+  color: $color-white;
+  &:hover {
+    background: darken($color-green-shamrock, 5%);
+    color: darken($color-white-whitesmoke, 5%);
+  }
+}
+
+.hidden {
+  display: none;
+}

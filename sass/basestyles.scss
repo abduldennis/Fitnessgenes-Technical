@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #efefef;
+}
+
+section {
+  background: #fff;
+  padding: 1em;
+}
+
+.messaging {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  #survey-end {
+    text-align: center;
+  }
+}

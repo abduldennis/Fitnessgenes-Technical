@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+  <head>
+    <title>Fitness Genes Tech Test</title>
+    <!--Insert Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body>
+    <section>
+      <!--Survey Form-->
+      <form id="surveyform">
+
+       <!--Age Selection-->
+        <div id="agevalidation">
+          <label for="age">Your Age:</label>
+          <input type="text" id="userage" name="age">
+          <p id="validationerror"></p>
+          <input class="action-button shadow animate green" type="button" id="myBtn" value="Next" />
+        </div>
+        <!--End age selection-->
+        
+        <!--Gender selection-->
+        <div id="gendervalidation">
+            <p>What is your gender:</p>
+            <div class="container">
+              <div class="button-wrap">
+                <input class="hidden radio-label" type="radio" name="gender" id="male" value="male" checked="checked"/>
+                <label class="button-label" for="male">
+                  <h1>Male</h1>
+                </label>
+                <input class="hidden radio-label" type="radio" name="gender" id="female" value="female"/>
+                <label class="button-label" for="female">
+                  <h1>Female</h1>
+                </label>
+                <input class="hidden radio-label" type="radio" name="gender" id="other" value="other"/>
+                <label class="button-label" for="other">
+                  <h1>Other</h1>
+                </label>
+              </div>
+            </div>
+            <p id="validationerror"></p>
+          <input class="action-button shadow animate green" type="button" id="myBtn2" value="Next" />
+        </div>
+        <!--End gender selection-->
+
+        <!--License selection-->
+        <div id="licensevalidation">
+          <p>Do you have a license:</p>
+          <div class="container">
+            <div class="button-wrap">
+              <input class="hidden radio-label" type="radio" name="haslicense" id="haslicense" value="yes" checked="checked"/>
+              <label class="button-label" for="haslicense">
+                <h1>Yes</h1>
+              </label>
+              <input class="hidden radio-label" type="radio" name="haslicense" id="haslicense2" value="no"/>
+              <label class="button-label" for="haslicense2">
+                <h1>No</h1>
+              </label>
+            </div>
+          </div>
+          <p id="validationerror"></p>
+          <input class="action-button shadow animate green" type="button" id="myBtn3" value="Next" />
+        </div>
+        <!--End license selection-->
+
+        <!--First car selection-->
+        <div id="carvalidation">
+          <p>Is this your first car:</p>
+          <div class="container">
+            <div class="button-wrap">
+              <input class="hidden radio-label" type="radio" name="hascar" id="hascar" value="yes" checked="checked"/>
+              <label class="button-label" for="hascar">
+                <h1>Yes</h1>
+              </label>
+              <input class="hidden radio-label" type="radio" name="hascar" id="hascar2" value="no" />
+              <label class="button-label" for="hascar2">
+                <h1>No</h1>
+              </label>
+            </div>
+          </div>
+          <p id="validationerror"></p>
+          <input class="action-button shadow animate green" type="button" id="myBtn4" value="Finish" />
+        </div>
+        <!--End first car selection-->
+
+      </form>
+      <!--End Survey Form-->
+
+      <!--User Messaging -->
+      <div class="messaging">
+          <div class="end">
+            <p id="survey-end">Thank you for your interest in our survey.</p>
+            <input class="action-button shadow animate green" type="button" id="reloadBtn" value="Reload" />
+          </div>
+          <div id="success">
+            <p id="survey-success">We have an amazing offer for you.</p>
+            <input class="action-button shadow animate green" type="button" id="reloadBtn" value="Click here to continue" />
+          </div>
+          <div class="total">
+            <p id="survey-total"></p>
+          </div>
+      </div>
+      <!--End-->
+    </section>
+
+    <!--Insert Javascript-->
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>

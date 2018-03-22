@@ -1,0 +1,28 @@
+.animate
+{
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+  position: relative;
+  padding: 10px 26px;
+  border-radius: 10px;
+  font-size: 1em;
+  color: $color-white;
+  text-decoration: none;
+  outline: none;
+  &.green {
+    background-color: $button-background;
+    border-bottom: 5px solid $button-border;
+    text-shadow: 0px -2px $button-border;
+  }
+  &.action-button {
+    &:active {
+      transform: translate(0px,5px);
+      -webkit-transform: translate(0px,5px);
+      border-bottom: 1px solid;
+    }
+  }  
+}
